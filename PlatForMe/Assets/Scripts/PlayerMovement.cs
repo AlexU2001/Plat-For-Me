@@ -39,7 +39,11 @@ public class PlayerMovement : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        rb = rb == null ? GetComponent<Rigidbody2D>() : rb;
     }
 
     private void Update()

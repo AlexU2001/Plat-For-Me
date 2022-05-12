@@ -185,6 +185,20 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
+                    "m_Id": "b5fcd0c65c84459ba3f6a457a1c0f233"
+                },
+                "m_SlotId": 7
+            },
+            "m_InputSlot": {
+                "m_Node": {
+                    "m_Id": "eb722c972d2048f59bc0e34219bd15b9"
+                },
+                "m_SlotId": 0
+            }
+        },
+        {
+            "m_OutputSlot": {
+                "m_Node": {
                     "m_Id": "d5a6c8235b9849a7953e14f0e78c7404"
                 },
                 "m_SlotId": 2
@@ -258,7 +272,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "003928c9b4c74d72882d463803b4f1ad",
     "m_Id": 0,
-    "m_DisplayName": "Color",
+    "m_DisplayName": "Base Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -782,7 +796,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "4c851e2d878741efb01b9d5b0a849223",
     "m_Id": 0,
-    "m_DisplayName": "GlowColor",
+    "m_DisplayName": "Emission Color",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1115,7 +1129,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "88752c61611141a39270c2edf69ca1f4",
     "m_Id": 0,
-    "m_DisplayName": "_MainTex",
+    "m_DisplayName": "Main Texture",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1751,7 +1765,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "eff2c634b82d4ea48671c7f59df03b8c",
     "m_Id": 0,
-    "m_DisplayName": "_Emission",
+    "m_DisplayName": "Emission Texture",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",

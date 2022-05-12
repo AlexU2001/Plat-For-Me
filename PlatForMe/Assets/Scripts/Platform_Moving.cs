@@ -16,7 +16,7 @@ public class Platform_Moving : Platform
     [SerializeField] private bool Horizontal = true;
     [Tooltip("If the platform will add or substract from the initial position")]
     [SerializeField] private bool reverse = false;
-    
+
 
     private Vector2 start;
     private Vector2 end;
@@ -73,9 +73,9 @@ public class Platform_Moving : Platform
         if (collision.gameObject.CompareTag("Player"))
         {
             collision.transform.SetParent(null);
+            DontDestroyOnLoad(collision.gameObject);
         }
     }
-
 
     IEnumerator MoveTowards(Vector2 startPos, Vector2 endPos, float time)
     {
@@ -89,5 +89,14 @@ public class Platform_Moving : Platform
         transform.localPosition = endPos;
         yield return waitTime;
         NewDestination();
+    }
+    private float FindTime(float speed, float distance)
+    {
+        float t = distance / speed;
+        return t;
+    }
+    private void OnValidate()
+    {
+        time = FindTime(2, distance);
     }
 }

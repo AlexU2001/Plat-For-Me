@@ -1,17 +1,41 @@
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    [Header("Audio")]
     [SerializeField] private AudioMixer audioMixer;
     [SerializeField] private Slider masterSlider;
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider soundSlider;
 
+    [Header("Player Colors")]
+    [SerializeField] private Transform parentGrid;
+    [SerializeField] private GameObject colorButton;
+
+
     string masterKey = "masterVolume";
     string musicKey = "musicVolume";
     string soundKey = "soundVolume";
+
+    private void Awake()
+    {
+        if(PlatformManager.instance != null)
+        {
+            DisplayColors();
+        }
+    }
+
+    private void DisplayColors()
+    {
+        foreach (Color color in PlatformManager.instance.collectedColors)
+        {
+            Image button = Instantiate(colorButton, parentGrid).GetComponent<Image>(); 
+            button.color = color;
+        }
+    }
 
     private void Start()
     {

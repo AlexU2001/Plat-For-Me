@@ -45,6 +45,7 @@ public class Platform : MonoBehaviour
         if (!levelSpecific)
         {
             PlatformManager.instance.AddToCount(1);
+            PlatformManager.instance.playerPlatforms.Remove(gameObject);
         }
     }
 }
