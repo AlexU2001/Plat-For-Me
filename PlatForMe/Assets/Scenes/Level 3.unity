@@ -799,6 +799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinemachineVirtualCamera: {fileID: 1669810444}
+  levelMusic: {fileID: 8300000, guid: fa7f1a82f467a9147b8c39f543e8e5c5, type: 3}
 --- !u!4 &1124117893
 Transform:
   m_ObjectHideFlags: 0
@@ -1239,6 +1240,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 2467160007278105189, guid: 911012a8e461b084c933a5e8716ce75c, type: 3}
+  playerPlatforms: []
+  collectedColors: []
 --- !u!4 &1986260144
 Transform:
   m_ObjectHideFlags: 0

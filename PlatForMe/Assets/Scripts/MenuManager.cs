@@ -52,7 +52,7 @@ public class MenuManager : MonoBehaviour
         {
             keyValue = PlayerPrefs.GetFloat(key);
             audioMixer.SetFloat(key, keyValue);
-            Debug.Log(keyValue);
+            /*Debug.Log(keyValue);*/
             slider.value = keyValue;
         }
         else if(!PlayerPrefs.HasKey(key))

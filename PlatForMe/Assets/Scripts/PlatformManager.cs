@@ -61,7 +61,7 @@ public class PlatformManager : MonoBehaviour
         float originalSum = platformCount;
         platformCount += sum;
         PlatformCreated?.Invoke(true);
-        Debug.Log("Original: " + originalSum + " New: " + platformCount);
+       /* Debug.Log("Original: " + originalSum + " New: " + platformCount);*/
     }
 
     public void ChangeColor(Color targetColor)

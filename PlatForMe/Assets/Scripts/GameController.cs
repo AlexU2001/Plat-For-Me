@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
 
     [SerializeField] private Cinemachine.CinemachineVirtualCamera cinemachineVirtualCamera;
+    [SerializeField] private AudioClip levelMusic;
 
     private void Start()
     {
@@ -11,6 +13,23 @@ public class GameController : MonoBehaviour
         if (cinemachineVirtualCamera == null)
         {
             FindObjectOfType<Cinemachine.CinemachineVirtualCamera>();
+        }
+    }
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnLoaded;
+    }
+
+    private void OnLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (levelMusic != null)
+        {
+            AudioManager.instance.PlayTarget(levelMusic);
         }
     }
 

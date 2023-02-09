@@ -2085,6 +2085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinemachineVirtualCamera: {fileID: 1692613987}
+  levelMusic: {fileID: 8300000, guid: fa7f1a82f467a9147b8c39f543e8e5c5, type: 3}
 --- !u!4 &1124117893
 Transform:
   m_ObjectHideFlags: 0
@@ -3625,7 +3626,7 @@ PrefabInstance:
       objectReference: {fileID: -7538133236376270951, guid: a0681556489b6c04ba9f52f82b141d6d, type: 2}
     - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
       propertyPath: clips.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
       propertyPath: clips.Array.data[3].clip
@@ -3636,8 +3637,24 @@ PrefabInstance:
       value: Next
       objectReference: {fileID: 0}
     - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
+      propertyPath: clips.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 42f0d1be8cbf7e348aead3f9e552dadd, type: 3}
+    - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
+      propertyPath: clips.Array.data[4].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
+      propertyPath: clips.Array.data[4].name
+      value: SpecialMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
       propertyPath: clips.Array.data[3].audioType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6754799578334209890, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
+      propertyPath: clips.Array.data[4].audioType
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6754799578334209891, guid: 8820b646331ccf0469791d96e093e45c, type: 3}
       propertyPath: m_RootOrder

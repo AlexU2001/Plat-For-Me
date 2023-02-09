@@ -601,23 +601,23 @@ CompositeCollider2D:
   - m_Collider: {fileID: 704798185}
     m_ColliderPaths:
     - - X: 99999707
-        Y: -150000000
+        Y: -150001008
       - X: 99999707
-        Y: -50000000
+        Y: -32160998
       - X: -100000000
-        Y: -50000293
+        Y: -32161291
       - X: -99999707
-        Y: -150000000
+        Y: -150001008
   m_CompositePaths:
     m_Paths:
     - - {x: 34.499943, y: -15}
       - {x: 34.499943, y: 35}
       - {x: -34.5, y: 34.999943}
       - {x: -34.499943, y: -15}
-    - - {x: -9.5, y: -5.000029}
+    - - {x: -9.5, y: -3.2161283}
       - {x: -9.5, y: 25}
       - {x: 9.500006, y: 24.999971}
-      - {x: 9.499993, y: -5.000001}
+      - {x: 9.499993, y: -3.2161005}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &630117552
@@ -1097,6 +1097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinemachineVirtualCamera: {fileID: 1669810444}
+  levelMusic: {fileID: 8300000, guid: fa7f1a82f467a9147b8c39f543e8e5c5, type: 3}
 --- !u!4 &1124117893
 Transform:
   m_ObjectHideFlags: 0
@@ -1617,6 +1618,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   platformPrefab: {fileID: 2467160007278105189, guid: 911012a8e461b084c933a5e8716ce75c, type: 3}
+  playerPlatforms: []
+  collectedColors: []
 --- !u!4 &1986260144
 Transform:
   m_ObjectHideFlags: 0
@@ -1956,7 +1959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6384272454704648565, guid: efdbfeb05246c7e4786b7473a66fc42b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 11.784
       objectReference: {fileID: 0}
     - target: {fileID: 6384272454704648565, guid: efdbfeb05246c7e4786b7473a66fc42b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1964,7 +1967,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6384272454704648565, guid: efdbfeb05246c7e4786b7473a66fc42b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10
+      value: -9.1081
       objectReference: {fileID: 0}
     - target: {fileID: 6384272454704648565, guid: efdbfeb05246c7e4786b7473a66fc42b, type: 3}
       propertyPath: m_LocalPosition.z
