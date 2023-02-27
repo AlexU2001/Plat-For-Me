@@ -5,7 +5,23 @@ public class GameController : MonoBehaviour
 {
 
     [SerializeField] private Cinemachine.CinemachineVirtualCamera cinemachineVirtualCamera;
-    [SerializeField] private AudioClip levelMusic;
+    [SerializeField] private AudioClip generalMusic;
+    [SerializeField] private AudioClip specialMusic;
+
+    private AudioClip desiredMusic;
+
+    private void Awake()
+    {
+        ColorOrb orb;
+        orb = FindObjectOfType<ColorOrb>();
+        if (orb != null)
+        {
+            desiredMusic = specialMusic;
+        } else
+        {
+            desiredMusic = generalMusic;
+        }
+    }
 
     private void Start()
     {
@@ -27,9 +43,9 @@ public class GameController : MonoBehaviour
 
     private void OnLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (levelMusic != null)
+        if (desiredMusic != null)
         {
-            AudioManager.instance.PlayTarget(levelMusic);
+            AudioManager.instance.PlayTarget(desiredMusic);
         }
     }
 

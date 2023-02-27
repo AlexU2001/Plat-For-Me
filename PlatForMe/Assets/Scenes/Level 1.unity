@@ -215,27 +215,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2985163564815127213, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: color.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2985163564815127213, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: color.g
-      value: 0
+      value: 0.41890875
       objectReference: {fileID: 0}
     - target: {fileID: 2985163564815127213, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: color.r
-      value: 0.56078434
-      objectReference: {fileID: 0}
-    - target: {fileID: 3318452076265755889, guid: 110ed92a308da15499d351658ed2667c, type: 3}
-      propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3318452076265755889, guid: 110ed92a308da15499d351658ed2667c, type: 3}
-      propertyPath: m_Color.g
+      propertyPath: m_Color.b
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3318452076265755889, guid: 110ed92a308da15499d351658ed2667c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.41890875
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318452076265755889, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: m_Color.r
-      value: 0.56078434
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3558628302785893633, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: m_Name
@@ -287,15 +287,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6530152945770104320, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6530152945770104320, guid: 110ed92a308da15499d351658ed2667c, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6530152945770104320, guid: 110ed92a308da15499d351658ed2667c, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.41890875
+      objectReference: {fileID: 0}
+    - target: {fileID: 6530152945770104320, guid: 110ed92a308da15499d351658ed2667c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.56078434
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 110ed92a308da15499d351658ed2667c, type: 3}
@@ -406,6 +406,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1567373165}
   - {fileID: 227984095}
@@ -617,6 +618,7 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -702,6 +704,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.97, y: -3.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -803,7 +806,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cinemachineVirtualCamera: {fileID: 1692613987}
-  levelMusic: {fileID: 8300000, guid: 42f0d1be8cbf7e348aead3f9e552dadd, type: 3}
+  generalMusic: {fileID: 8300000, guid: fa7f1a82f467a9147b8c39f543e8e5c5, type: 3}
+  specialMusic: {fileID: 8300000, guid: 42f0d1be8cbf7e348aead3f9e552dadd, type: 3}
 --- !u!4 &1124117893
 Transform:
   m_ObjectHideFlags: 0
@@ -814,6 +818,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -844,6 +849,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 630117550}
   - {fileID: 1440017778}
@@ -1171,6 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -1203,6 +1210,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -1249,6 +1257,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1541,7 +1550,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8590092610220336261, guid: 23f325d2ab0638d4480b99447ff27141, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8590092610220336261, guid: 23f325d2ab0638d4480b99447ff27141, type: 3}
       propertyPath: m_LocalPosition.x

@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -10,6 +11,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioMixerGroup soundFX;
 
     [SerializeField] private Sound[] clips = new Sound[0];
+    [SerializeField] private float fadeTime = 2f;
 
     private AudioSource musicSource;
     public static AudioManager instance;
@@ -66,7 +68,8 @@ public class AudioManager : MonoBehaviour
             case AudioType.Music:
                 sound.audioSource = musicSource;
 
-                sound.audioSource.clip = sound.clip;
+                StartCoroutine(changeClip(fadeTime, sound.clip));
+
                 sound.audioSource.loop = sound.loop;
 
                 sound.audioSource.outputAudioMixerGroup = music;
@@ -76,6 +79,25 @@ public class AudioManager : MonoBehaviour
                 sound.audioSource.loop = sound.loop;
                 sound.audioSource.Play();
                 break;
+        }
+    }
+
+    private IEnumerator changeClip(float time, AudioClip targetClip) {
+        float elapsedTime = 0;
+        while (elapsedTime < time)
+        {
+            musicSource.volume = Mathf.Lerp(1f, 0f, elapsedTime / time);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        musicSource.clip = targetClip;
+
+        elapsedTime = 0;
+        while (elapsedTime < time)
+        {
+            musicSource.volume = Mathf.Lerp(0f, 1f, elapsedTime / time);
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
     }
 
